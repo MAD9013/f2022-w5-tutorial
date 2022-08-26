@@ -1,0 +1,16 @@
+/* ---------- Icons ---------- */
+
+.icon-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* ---------- Card ---------- */
+
+.h-card {
+  border: .125rem solid #ccc;
+  padding: 1rem;
+  border-radius: .5rem;
+  width: min(35rem, 100%);
+}
+

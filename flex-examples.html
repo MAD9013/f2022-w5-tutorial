@@ -1,0 +1,127 @@
+<!DOCTYPE -html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Basics | W5 Flexbox</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/masthead-complete.css" />
+    <link rel="stylesheet" href="./css/flex-examples.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  </head>
+  <body>
+    <header class="masthead no-print" role="banner">
+      <div class="container">
+        <a href="/" class="logo">
+          <strong>W5 - Flexbox</strong>
+        </a>
+        <nav id="nav" role="navigation">
+          <ul>
+            <li><a href="./flex-basics.html">Flex Basics</a></li>
+            <li><a href="./flex-examples.html">Flex Examples</a></li>
+            <li><a href="./flex-layout.html">Flex Layout</a></li>
+          </ul>
+        </nav>
+        <a class="nav-toggle" href="#nav" aria-label="Click to open mobile nav">
+          <span class="tog top"></span>
+          <span class="tog middle"></span>
+          <span class="tog bottom"></span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main" role="main">
+      <section>
+        <div class="container container-side-padding">
+          <h1>Flex Examples</h1>
+
+          <!-- ---------- TUTORIAL CONTENT ---------- -->
+
+          <h2 class="padding-t">Icons With Flex</h2>
+
+          <a class="icon" href="#">
+            <i class="material-symbols-outlined">groups</i>
+            <span class="icon--label">Groups</span>
+          </a>
+
+          <h2 class="padding-t">Icon Groups With Flex</h2>
+
+          <ul class="icon-list basic">
+            <li>
+              <a class="icon" href="#">
+                <i class="material-symbols-outlined">groups</i>
+                <span class="icon--label">Groups</span>
+              </a>
+            </li>
+            <li>
+              <a class="icon" href="#">
+                <i class="material-symbols-outlined">favorite</i>
+                <span class="icon--label">Favorites</span>
+              </a>
+            </li>
+            <li>
+              <a class="icon" href="#">
+                <i class="material-symbols-outlined">settings</i>
+                <span class="icon--label">Settings</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="icon-list bar">
+            <li>
+              <a class="icon" href="#">
+                <i class="material-symbols-outlined">groups</i>
+                <span class="icon--label">Groups</span>
+              </a>
+            </li>
+            <li>
+              <a class="icon" href="#">
+                <i class="material-symbols-outlined">favorite</i>
+                <span class="icon--label">Favorites</span>
+              </a>
+            </li>
+            <li>
+              <a class="icon" href="#">
+                <i class="material-symbols-outlined">settings</i>
+                <span class="icon--label">Settings</span>
+              </a>
+            </li>
+          </ul>
+          
+          <h2 class="padding-t">Horizontal Card With Flex</h2>
+
+          <div class="h-card">
+            <div class="h-card__img">
+              <img src="https://placedog.net/500/500?random" alt="A random cute dog">
+            </div>
+            <div class="h-card__content">
+              <h3 class="h-card__title">
+                A Cute Dog
+                <button class="h-card__icon" href="#">
+                  <i class="material-symbols-outlined">favorite</i>
+                </button>
+              </h3>
+              <p class="h-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio unde dolore dolor.</p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+
+
+          <!-- ---------- END TUTORIAL CONTENT ---------- -->
+        </div>
+      </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <p><a href="https://mad9013.github.io/F2022/modules/week5/" target="_blank">Week 6 Content</a></p>
+        <small>Created for <a href="https://mad9013.github.io/F2022/">MAD9013 course</a> and free for any use.</small>
+      </div>
+    </footer>
+    <div class="click-to-close"></div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

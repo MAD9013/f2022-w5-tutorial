@@ -1,0 +1,65 @@
+/* - - - - - - - - - - Nav Toggle - - - - - - - - - - */
+
+.nav-toggle {
+  width: 2.5rem;
+  height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.nav-toggle .tog {
+  width: 100%;
+  height: .25rem;
+  background-color: #fff;
+  position: relative;
+  transition: top 0.2s, bottom 0.2s, opacity 0.2s, transform 0.2s;
+}
+.tog.top {
+  top: 0;
+}
+
+.tog.bottom {
+  bottom: 0;
+}
+
+.open .top {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.open .middle {
+  opacity: 0;
+}
+
+.open .bottom {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+/*
+
+Click to close creates a fade out for the rest of the content when the nav is open.
+It will also let you click outside of the nav to close it
+
+*/
+
+.click-to-close {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0008;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.click-to-close.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* - - - - - - - - - - Edit and add your code below! - - - - - - - - - - */

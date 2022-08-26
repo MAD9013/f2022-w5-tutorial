@@ -1,0 +1,56 @@
+.hero {
+  background-image: linear-gradient(to bottom, #0009, #0009), url('../images/hero-small.jpg');
+  background-position: left center;
+  background-size: cover;
+  background-repeat: none;
+}
+
+.hero .container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  padding: 1rem;
+  color: #fff;
+}
+
+.hero-content h2 {
+  border: none;
+  font-size: 3rem;
+}
+
+.hero-content p,
+.hero-content .btn {
+  font-size: 1.25rem;
+}
+
+@media only screen and (min-width: 45em) {
+
+  .hero {
+    background-image: linear-gradient(to bottom, #0009, #0009), url('../images/hero-medium.jpg');
+    background-position: center;
+  }
+
+  .hero-content {
+    max-width: 45em;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .hero {
+    background-image: linear-gradient(to bottom, #0000, #000c), url('../images/hero-large.jpg');
+  }
+
+  .hero .container {
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+}
